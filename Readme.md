@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Павел Таганкин](https://up.htmlacademy.ru/htmlcss/32/user/1383841).
-* Наставник: `Михаил Данюшин(https://htmlacademy.ru/profile/id225742).
+* Наставник: Михаил Данюшин(https://htmlacademy.ru/profile/id225742).
 
 ---
 
