@@ -44,9 +44,7 @@
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="index.html">
-              <img class="logo-house" src="" alt="Главная">
-            </a>
+            <a class="breadcrumbs-link" href="index.html"></a>
           </li>
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link">Гостиницы</a>
@@ -56,32 +54,32 @@
            <h2 class="visually-hidden">Список гостиниц</h2>
          <fieldset class="hotels-filter-group">
            <legend class="hotels-filter-title">Инфраструктура:</legend>
+           <form action="send.php" method="post">
            <ul class="hotels-filter-list">
-           <li class="hotels-filter-item">
-            <label class="control">
-            <input class="visually-hidden control-input" type="checkbox" name="pool" checked>
-            <span class="control-mark"></span>
-            <span class="control-label">Бассейн</span>
-           </label>
-          </li>
-          <li class="hotels-filter-item">
-           <label class="control">
-            <input class="visually-hidden control-input" type="checkbox" name="parking" checked>
-            <span class="control-mark"></span>
-            <span class="control-label">Парковка</span>
-           </label>
-           </li>
-           <li class="hotels-filter-item">
-            <label class="control">
-               <input class="visually-hidden control-input" type="checkbox" name="Wi-Fi">
-               <span class="control-mark"></span>
-               <span class="control-label">Wi-Fi</span>
-            </label>
-           </li>
-          </ul>
-         </fieldset>
+             <li class="hotels-filter-item">
+                <label class="control">
+                 <input class="visually-hidden control-input" type="checkbox" name="pool" checked>
+                 <span class="control-label">Бассейн</span>
+                 </label>
+             </li>
+             <li class="hotels-filter-item">
+               <label class="control">
+                 <input class="visually-hidden control-input" type="checkbox" name="parking" checked>
+                 <span class="control-label">Парковка</span>
+               </label>
+             </li>
+             <li class="hotels-filter-item">
+               <label class="control">
+                 <input class="visually-hidden control-input" type="checkbox" name="Wi-Fi">
+                 <span class="control-label">Wi-Fi</span>
+               </label>
+              </li>
+           </ul>
+        </form>
+        </fieldset>
          <fieldset class="hotels-filter-group">
            <legend class="hotels-filter-title">Тип жилья:</legend>
+             <form action="send.php" method="post">
            <ul class="hotels-filter-list">
             <li class="hotels-filter-item">
              <label class="control">
@@ -91,20 +89,21 @@
             </label>
            </li>
            <li class="hotels-filter-item">
-            <label class="control">
-             <input class="visually-hidden control-input" type="radio" name="motel" value="motel">
-             <span class="control-mark"></span>
-             <span class="control-label">Мотель</span>
+           <label class="control">
+               <input class="visually-hidden control-input" type="radio" name="hotel" value="motel">
+               <span class="control-mark"></span>
+               <span class="control-label">Мотель</span>
             </label>
             </li>
             <li class="hotels-filter-item">
              <label class="control">
-                <input class="visually-hidden control-input" type="radio" name="apartaments" value="apartaments">
-                <span class="control-mark"></span>
-                <span class="control-label">Апартаменты</span>
-             </label>
-            </li>
-           </ul>
+                 <input class="visually-hidden control-input" type="radio" name="hotel" value="apartaments">
+                   <span class="control-mark"></span>
+                   <span class="control-label">Апартаменты</span>
+                 </label>
+               </li>
+               </ul>
+             </form>
          </fieldset>
          <fieldset class="hotels-filter-group">
            <legend class="hotels-filter-title">Стоимость, ₽:</legend>
@@ -121,8 +120,10 @@
              <input class="hotels-filter-input" type="number" name="max-price">
            </label>
          </fieldset>
-         <button class="button" type="submit">Применить</button>
-         <button class="button" type="submit">Сбросить</button>
+         <form action="send.php" method="post">
+           <button class="button" type="submit">Применить</button>
+           <button class="button" type="reset">Сбросить</button>
+         </form>
        </section>
       </header>
       <section class="hotels">
@@ -134,7 +135,6 @@
             <option value="cheap">Сначала дешёвое</option>
             <option value="expensive">Сначала дорогое</option>
           </select>
-          <button class="visually-hidden" type="submit">Отсортировать продукты</button>
         </form>
         <a href="#" class="button button-light">
           <span class="visually-hidden">Показать список</span>
@@ -146,7 +146,7 @@
         <li class="product-item">
          <div class="product-card">
            <a class="product-card-link" href="product.html">
-             <img class="product-card-image" src="" alt="">
+             <img class="product-card-image" src="" alt="Гостиница Amara Resort & Spa">
              <h3 class="product-card-title">Amara Resort & Spa</h3>
            </a>
            <span class="type-of-hotel">Гостиница</span>
@@ -159,7 +159,7 @@
         <li class="productu-item">
           <div class="product-card">
             <a class="product-card-link" href="product.html">
-              <img class="product-card-image" src="" alt="">
+              <img class="product-card-image" src="" alt="Мотель Desert Quail Inn">
               <h3 class="product-card-title">Desert Quail Inn</h3>
             </a>
             <span class="type-of-hotel">Мотель</span>
@@ -172,7 +172,7 @@
         <li class="product-item">
           <div class="product-card">
             <a class="product-card-link" href="product.html">
-              <img class="product-card-image" src="" alt="">
+              <img class="product-card-image" src="" alt="Апартаменты Villas at Poco Diablo">
               <h3 class="product-card-title">Villas at Poco Diablo</h3>
             </a>
             <span class="type-of-hotel">Апартаменты</span>
@@ -185,7 +185,7 @@
         <li class="product-item">
           <div class="product-card">
             <a class="product-card-link" href="product.html">
-              <img class="product-card-image" src="" alt="">
+              <img class="product-card-image" src="" alt="Гостиница GreenTree Inn">
               <h3 class="product-card-title">GreenTree Inn</h3>
             </a>
             <span class="type-of-hotel">Гостиница</span>
@@ -196,6 +196,7 @@
           </div>
         </li>
       </ul>
+      <button type="button" class="load">ЗАГРУЗИТЬ ЕЩЁ</button>
       <ul class="pagination">
         <li class="pagination-item">
           <a class="pagination-link pagination-current">1</a>
@@ -226,14 +227,15 @@
           <option value="four-hotels">4</option>
           <option value="five-hotels">5</option>
         </select>
-        <button class="visually-hidden" type="submit">Отсортировать продукты</button>
       </form>
+      </section>
+      <section class="subscribe-more">
       <div class="subscribe-catalogue">
         <h2 class="subscribe-title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
         <p class="subscribe-description">Только полезная информация и никакого спама,честное бойскаутское!</p>
         <form action="send.php" method="post">
           <label for="e-mail">Ваш e-mail</label>
-          <input type="email" id="e-mail" name="e-mail">
+          <input type="email" id="e-mail" name="e-mail" required>
           <button class="button" type="submit">ПОДПИСАТЬСЯ</button>
         </form>
        </div>
