@@ -16,7 +16,39 @@
   font-display: swap;
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+}
+
+html {
+    height: 100%;   
+}
+
 body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     background-color: rgb(255, 255, 255);
     font-family: "PT Sans", sans-serif;
     font-size: 16px;
@@ -25,12 +57,34 @@ body {
     color: black;
 }
 
+ul {
+    list-style-type: none;
+}
+
 .page-header {
     background: #FFFFFF;
     color: #000000;
 }
 
+.navigation {
+    display: flex;
+    width: 1057px;
+    margin: 0 auto;
+}
+
+.navigation-list {
+    width: 350px;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation-user {
+    max-width: 250px;
+    margin-left: auto;
+}
+
 .navigation-link {
+    list-style: none;
     color: inherit;
     font-family: PT Sans;
     font-style: normal;
@@ -49,6 +103,20 @@ body {
     color: white;
 }
 
+.main-container {
+    flex-grow: 1;
+}
+
+.page-container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.main-logo {
+    display: block;
+    margin: 0 auto;
+}
+
 .main-index {
     color: black;
     background-color: white;
@@ -61,6 +129,10 @@ body {
 } 
 
 .sedona-advantages {
+    margin: 0;
+    margin-top: 146px;
+    margin-bottom: 23px;
+    padding: 0;
     text-transform: uppercase;
     font-family: "PT Sans";
     font-size: 30px;
@@ -73,6 +145,8 @@ body {
 }
 
 .advantages-description {
+    margin: 0;
+    padding: 0;
     font-family: "PT Sans";
     font-size: 22px;
     font-style: normal;
@@ -81,6 +155,25 @@ body {
     letter-spacing: 0em;
     text-align: center;
     color: inherit;
+}
+
+.index-columns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 75px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.columns {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
 }
 
 .blue {
@@ -121,6 +214,7 @@ body {
     text-align: center;
     color: inherit;
 }
+
 
 .comfort-title {
     text-transform: uppercase;
@@ -267,6 +361,12 @@ body {
     color: inherit;
 }
 
+
+.interested {
+    display: flex;
+    flex-direction: column;
+}
+
 .search {
     text-transform: uppercase;
     background-color: #756257;
@@ -275,9 +375,20 @@ body {
     border-radius: 10px;
     text-decoration: none;
     color: white;
+    text-align: center;
+    font-family: PT Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: center; 
+    margin: 0 auto;
 }
 
 .subscribe {
+    display: flex;
+    flex-direction: column;
     background-image: url(../img/background.jpg);
     background-size: 100% auto;
     background-repeat: no-repeat;
@@ -293,6 +404,10 @@ body {
     letter-spacing: 0em;
     text-align: center;
     color: white;
+}
+
+.email-form {
+    margin: 0 auto;
 }
 
 .subscribe-description {
@@ -322,7 +437,25 @@ body {
     height: 60px;
 }
 
+.footer-container {
+    display: flex;
+    width: 1056px;
+    margin: 0 auto;
+}
+
+.footer-social-list {
+    display: flex;
+    justify-content: space-between;
+    margin-right: auto;
+}
+
+.footer-social-item {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
 .footer-phone {
+    margin: 0 auto;
     font-family: PT Sans;
     font-size: 40px;
     font-style: normal;
@@ -331,6 +464,10 @@ body {
     letter-spacing: 0em;
     text-align: center;
     color: black;
+}
+
+.footer-link {
+    margin-left: 0 auto;
 }
 
 .inner-header {
