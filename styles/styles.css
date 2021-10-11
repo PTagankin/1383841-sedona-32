@@ -44,16 +44,17 @@ html {
 }
 
 body {
+    width: 1200px;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
+    margin: auto;
     min-height: 100%;
-    background-color: rgb(255, 255, 255);
     font-family: "PT Sans", sans-serif;
     font-size: 16px;
     line-height: 24px;
-    background-color: white;
+    background-color: #F2F2F2;
     color: black;
 }
 
@@ -110,6 +111,7 @@ ul {
 }
 
 .main-container {
+    background-color: white;
     flex-grow: 1;
 }
 
@@ -163,21 +165,20 @@ ul {
 
 .index-columns {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     padding: 0 75px;
 }
 
+
+
 .row {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
 }
 
 .columns {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
+    display: block;
+    background-color: #83B3D3;
 }
 
 .blue {
@@ -428,7 +429,6 @@ ul {
 .subscribe-email {
     background: #F2F2F2;
     border-radius: 0px 10px 10px 0px;
-    transform: matrix(-1, 0, 0, 1, 0, 0);
     width: 600px;
     height: 60px;
 }
@@ -476,7 +476,6 @@ ul {
 
 .inner-header {
     display: flex;
-    flex-direction: column;
     width: 1200px;
     margin: 0 auto;
     background-image: url(../img/catalog-background-1.jpg);
@@ -487,6 +486,10 @@ ul {
 .inner-header-container {
     width: 1056px;
     margin: 0 auto;
+}
+
+.form {
+    display: flex;
 }
 
 .inner-header-title {
@@ -502,7 +505,6 @@ ul {
 
 .breadcrumbs {
     display: flex;
-    flex-direction: row;
     background-image: url(../img/svgs/arrow.svg);
     background-repeat: no-repeat;
 }
@@ -552,8 +554,8 @@ ul {
 
 .submit {
     background-color: #83B3D3;
-    Width: 160px;
-    Height: 48px;
+    min-width: 160px;
+    min-height: 48px;
     font-family: PT Sans;
     font-size: 16px;
     font-style: normal;
@@ -596,7 +598,6 @@ ul {
 
 .hotels-settings {
     display: flex;
-    flex-direction: row;
     flex-wrap: nowrap;
 }
 
@@ -648,6 +649,10 @@ ul {
     display: flex;
 }
 
+.button {
+    border: 0;
+    padding: 0;
+}
 
 .product-list {
     display: flex;
@@ -657,7 +662,6 @@ ul {
 
 .line-1 {
     display: flex;
-    flex-direction: row;
 }
 
 .product-card-link {
@@ -776,7 +780,6 @@ ul {
 
 .middle-container {
     display: flex;
-    flex-direction: row;
 }
 
 .pagination {
