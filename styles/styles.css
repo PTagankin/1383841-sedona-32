@@ -115,10 +115,7 @@ ul {
     flex-grow: 1;
 }
 
-.page-container {
-    width: 1200px;
-    margin: 0 auto;
-}
+
 
 .main-logo {
     display: block;
@@ -166,7 +163,6 @@ ul {
 .index-columns {
     display: flex;
     justify-content: space-between;
-    padding: 0 75px;
 }
 
 
@@ -177,12 +173,11 @@ ul {
 }
 
 .columns {
-    display: block;
+    padding: 60px 90px;
+    height: 384px;
+    width: 400px;
     background-color: #83B3D3;
-}
-
-.blue {
-    background-color: #83B3D3;
+    color: white;
 }
 
 .true-city-title {
