@@ -488,7 +488,7 @@ ul {
 
 .subscribe-email {
     background: #F2F2F2;
-    border-radius: 0px 10px 10px 0px;
+    border-radius: 10px 0px 0px 10px;
     border: none;
     width: 600px;
     height: 60px;
@@ -569,6 +569,7 @@ ul {
 
 .form {
     display: flex;
+    align-items: flex-start;
 }
 
 .inner-header-title {
@@ -608,6 +609,9 @@ ul {
     color: white;    
 }
 
+.hotels-filter-list {
+    margin-top: 35px;
+}
 
 .hotels-filter-title {
     font-family: PT Sans;
@@ -633,6 +637,12 @@ ul {
     letter-spacing: 0em;
     text-align: left;
     color: white;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.control .control-label{
+    margin-left: 19px;
 }
 
 .right {
@@ -675,7 +685,7 @@ ul {
 
 .columns-right {
     margin-left: auto;
-    align-self: flex-end;
+    align-self: center;
 }
 
 .inner-hotels-container {
@@ -782,6 +792,7 @@ a.button-cards {
 }
 
 .line-column {
+    display: flex;
     margin-top: 1px;
 }
 
@@ -824,14 +835,17 @@ a.button-cards {
 }
 
 .product-card-price {
+    flex-grow: 1;
+    margin-left: auto;
+    margin-left: 78px;
     font-family: PT Sans;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 23px;
-    letter-spacing: 0em;
-    text-align: left;
+    letter-spacing: 0em; 
     color: #333333;    
+    text-align: center;
 }
 
 .more {
@@ -1052,4 +1066,41 @@ a.button-cards {
 
 .subunique:nth-child(3) {
     color: white;
+}
+
+fieldset {
+    border: 0 none;
+    margin: 0;
+    padding: 0;
+    margin-right: 37px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.control-input {
+    height: 20px;
+    width: 20px;
+    background-color: #FFFFFF;
+}
+
+.control-input-checkbox {
+    height: 20px;
+    width: 20px;
+    border-radius: 4px;
+    background: #FFFFFF;    
+}
+
+::placeholder {
+    padding-left: 22px;
+    font-family: PT Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: black;    
 }
