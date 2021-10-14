@@ -260,7 +260,7 @@ ul {
     padding: 164px 75px;
     width: 400px;
     height: 384px;
-    background-image: url(../img/svgs/present.svg);
+    background-image: url(../img/svgs/sandwich.svg);
     background-repeat: no-repeat;
 }
 
@@ -268,7 +268,7 @@ ul {
     padding: 164px 75px;
     width: 400px;
     height: 384px;
-    background-image: url(../img/svgs/sandwich.svg);
+    background-image: url(../img/svgs/present.svg);
     background-repeat: no-repeat;
     background-color: rgba(131, 179, 211, 0.12);
 }
@@ -1102,5 +1102,6 @@ ul {
     line-height: 26px;
     letter-spacing: 0em;
     text-align: left;
-    color: black;    
+    color: black;  
+    opacity: 0.6;  
 }
