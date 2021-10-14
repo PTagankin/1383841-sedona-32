@@ -48,10 +48,12 @@
 
      <main class="main-container main-index">
        <div class="page-container">
-        <h1 class="visually-hidden"> Седона - Городок в США </h1>
-         <img class="main-logo" src="img/svgs/welcome.svg" alt="Вид Седона">
-               <h2 class="sedona-advantages">седона - небольшой городок в аризоне, заслуживающий большего!</h2>
-               <p class="advantages-description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+          <h1 class="visually-hidden"> Седона - Городок в США </h1>
+           <img class="main-logo" src="img/svgs/welcome.svg" alt="Вид Седона">
+           <div class="block">
+                 <h2 class="sedona-advantages">седона - небольшой городок в аризоне, заслуживающий большего!</h2>
+                 <p class="advantages-description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+          </div>
             <section class="advantages">
               <div class="index-columns">
                 <div class="columns">
@@ -64,24 +66,30 @@
               <div class="index-columns">
                 <ul class="comfort-list">
                    <div class="row">
-                     <li class="comfort-item">
-                       <h3 class="comfort-title">жильё</h3>
-                       <p class="comfort-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-                     </li>
-                   <li class="comfort-item">
-                     <h3 class="comfort-title">еда</h3>
-                     <p class="comfort-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
-                   </li>
-                   <li class="comfort-item">
-                     <h3 class="comfort-title">сувениры</h3>
-                     <p class="comfort-description">Не только китайского, но и настоящего местного производства!</p>
-                   </li>
+                     <div class="block-1">
+                       <li class="comfort-item">
+                         <h3 class="comfort-title">жильё</h3>
+                         <p class="comfort-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+                       </li>
+                     </div>
+                     <div class="block-2">
+                       <li class="comfort-item">
+                         <h3 class="comfort-title">еда</h3>
+                         <p class="comfort-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+                       </li>
+                     </div>
+                     <div class="block-3">
+                       <li class="comfort-item">
+                         <h3 class="comfort-title">сувениры</h3>
+                         <p class="comfort-description">Не только китайского, но и настоящего местного производства!</p>
+                       </li>
+                     </div>
                    </div>
                 </ul>
               </div>
               <div class="index-columns">
                  <img class="benefits-img" src="img/photo-2.jpg" width="800" height="384" alt="каньон">
-                 <div clas="columns">
+                 <div class="columns">
                    <h3 class="devils-bridge-title blue">там есть мост дьявола</h3>
                    <span class="number-2 blue">— №2 —</span>
                    <p class="devils-bridge-description blue">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
@@ -90,21 +98,27 @@
               <div class="index-columns">
                  <ul class="more-advantages-list">
                    <div class="row">
-                     <li class="more-advantages-item">
-                        <h3 class="more-advantages-title">небольшая площадь</h3>
-                        <span class="number-3 numbers">— №3 —</span>
-                        <p class="more-advantages-description">Все достопримечательности находятся очень близко</p>
-                     </li>
-                     <li class="more-advantages-item">
-                         <h3 class="more-advantages-title">красивая дорога</h3>
-                         <span class="number-4 numbers">— №4 —</span>
-                         <p class="more-advantages-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-                     </li>
-                     <li class="more-advantages-item">
-                         <h3 class="more-advantages-title">мало туристов</h3>
-                         <span class="number-5 numbers">— №5 —</span>
-                         <p class="more-advantages-description">Большинство едет в Гранд Каньон и толпится там</p>
-                     </li>
+                     <div class="block-4">
+                         <li class="more-advantages-item">
+                            <h3 class="more-advantages-title">небольшая площадь</h3>
+                            <span class="number-3 numbers">— №3 —</span>
+                            <p class="more-advantages-description">Все достопримечательности находятся очень близко</p>
+                       </li>
+                      </div>
+                      <div class="block-5">
+                         <li class="more-advantages-item">
+                             <h3 class="more-advantages-title">красивая дорога</h3>
+                             <span class="number-4 numbers">— №4 —</span>
+                             <p class="more-advantages-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+                         </li>
+                      </div>
+                      <div class="block-6">
+                         <li class="more-advantages-item">
+                             <h3 class="more-advantages-title">мало туристов</h3>
+                             <span class="number-5 numbers">— №5 —</span>
+                             <p class="more-advantages-description">Большинство едет в Гранд Каньон и толпится там</p>
+                         </li>
+                      </div>
                    </div>
                  </ul>
               </div>
@@ -118,7 +132,7 @@
                    <h2 class="subscribe-title ">подпишитесь на рассылку</h2>
                    <p class="subscribe-description ">Только полезная информация и никакого спама,честное бойскаутское!</p>
                     <form action="send.php" method="post" class="email-form">
-                      <label for="e-mail">Ваш e-mail</label>
+                      <label for="e-mail" class="visually-hidden">Ваш email</label>
                       <input type="email" id="e-mail" name="e-mail" class="subscribe-email" placeholder="Ваш e-mail">
                       <button class="button subbutton" type="submit">подписаться</button>
                     </form>
