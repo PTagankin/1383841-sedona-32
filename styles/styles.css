@@ -65,6 +65,8 @@ body {
 
 ul {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 .page-header {
@@ -81,13 +83,19 @@ ul {
 .navigation-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     width: 350px;
     margin: 0;
     padding: 0;
 }
 
+.navigation-item-left:not(:last-child) {
+    margin: 0;
+    margin-right: 33px;
+}
 
+.navigation-item:not(:last-child) {
+    margin-right: 21px;
+}
 
 .logo-link {
     margin: 0 auto;
@@ -111,7 +119,7 @@ ul {
 .navigation-user {
     margin: 0;
     padding: 0;
-    max-width: 250px;
+    max-width: 300px;
     margin-left: auto;
 }
 
@@ -548,7 +556,7 @@ ul {
 }
 
 .footer-link {
-    margin-left: 0 auto;
+    margin-left: auto;
     align-self: center;
 }
 
@@ -1075,10 +1083,7 @@ fieldset {
     margin-right: 37px;
 }
 
-ul {
-    margin: 0;
-    padding: 0;
-}
+
 
 .control-input {
     height: 20px;
