@@ -28,10 +28,7 @@ img {
     height: auto;
 }
 
-.button {
-    border: 0;
-    padding: 0;
-}
+
 
 .visually-hidden {
     position: absolute;
@@ -752,7 +749,7 @@ ul {
     border-radius: 4px;
 }
 
-.product-card {
+.product-item {
     display: flex;
 }
 
@@ -776,7 +773,7 @@ ul {
 }
 
 
-.buttons {
+.mark {
     display: flex;
     flex-direction: column;
     margin-left: auto;
@@ -804,7 +801,7 @@ ul {
     margin-top: 1px;
 }
 
-.line-column-1 {
+.line-columns {
     margin-top: 31px;
     display: flex;
 
@@ -843,8 +840,6 @@ ul {
 }
 
 .product-card-price {
-    flex-grow: 1;
-    margin-left: auto;
     margin-left: 78px;
     font-family: PT Sans;
     font-size: 18px;
@@ -1109,4 +1104,9 @@ fieldset {
     text-align: left;
     color: black;  
     opacity: 0.6;  
+}
+
+.button-reset {
+    border: 0;
+    padding: 0;
 }
