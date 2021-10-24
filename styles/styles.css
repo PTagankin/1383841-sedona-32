@@ -188,17 +188,17 @@ ul {
 
 .index-columns {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 2fr;
 }
 
 .index-columns-reverse {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 2fr 1fr;
 }
 
 .row {
     display: grid;
-    grid-template-columns: 400px 400px 400px;
+    grid-template-columns: repeat(3, 1fr);
     padding: 0;
     margin: 0;
     width: 1200px; 
@@ -261,7 +261,7 @@ ul {
     margin-top: 26px;
 }
 
-.block-1 {
+.comfort-blue {
     width: 400px;
     height: 384px;
     background-image: url(../img/svgs/home.svg);
@@ -270,7 +270,7 @@ ul {
     padding: 164px 75px;
 }
 
-.block-2 {
+.comfort-white {
     padding: 164px 75px;
     width: 400px;
     height: 384px;
@@ -278,7 +278,7 @@ ul {
     background-repeat: no-repeat;
 }
 
-.block-3 {
+.comfort-same-blue {
     padding: 164px 75px;
     width: 400px;
     height: 384px;
@@ -287,21 +287,21 @@ ul {
     background-color: rgba(131, 179, 211, 0.12);
 }
 
-.block-4 {
+.advantages-blue {
     width: 400px;
     height: 384px;
     padding: 74px 75px;
     background-color: rgba(131, 179, 211, 0.12);
 }
 
-.block-5 {
+.advantages-dark-blue {
     width: 400px;
     height: 384px;
     padding: 74px 75px;
     background: rgba(131, 179, 211, 0.2);
 }
 
-.block-6 {
+.advantages-same-blue{
     width: 400px;
     height: 384px;
     padding: 74px 75px;
@@ -433,7 +433,7 @@ ul {
 
 
 .interested {
-    height: 417px;
+    min-height: 417px;
     display: flex;
     flex-direction: column;
     padding: 61px 240px;
