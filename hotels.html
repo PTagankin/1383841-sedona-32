@@ -38,7 +38,48 @@
               </svg>              
              <span class="visually-hidden">Понравившиеся</span>
             </a>
-         </li>           
+         </li>      
+         
+         <div class="popover popover-card">
+            <ul class="popover-list">
+              <li class="popover-item">
+                <div class="popover-line">
+                  <a class="popover-card-main" href="product.html">
+                    <img class="product-card-image" src="img/hotels/hotel-1-small.jpg" width="48" height="48" alt="Гоcтиница">
+                   <div class="popover-name">
+                       <span class="popover-card-link">Desert Quail Inn</span> 
+                       <span class="type-of-hotel">Мотель</span>
+                   </div>
+                  </a>
+                </div>
+               <button class="popover-button" type="button">
+                <svg class="popover-img" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.3 2.3H.6c-.3 0-.6.2-.6.5s.3.6.6.6h1.7v12c0 
+                  .3.3.6.6.6h10.2c.3 0 .6-.3.6-.6v-12h1.7c.3 0 .6-.3.6-.6s-.4-.5-.7-.5Zm-2.8 12.5H3.4V3.4h9.1v11.4ZM6.2 1.2h3.4c.3 0 .6-.3.6-.6S10 0 9.7 0H6.2c-.3 
+                  0-.5.3-.5.6s.2.6.5.6Z"/><path d="M6.2 12c.3 0 .6-.3.6-.6V5.7c0-.3-.3-.6-.6-.6s-.6.3-.6.6v5.7c.1.3.3.6.6.6ZM9.7 
+                  12c.3 0 .6-.3.6-.6V5.7c0-.3-.3-.6-.6-.6s-.6.4-.6.6v5.7c0 .3.2.6.6.6Z"/></svg>
+               </button>
+              </li>   
+                  <li class="popover-item">
+                    <div class="popover-line">
+                      <a class="popover-card-main" href="product.html">
+                        <img class="product-card-image" src="img/hotels/hotel-2-small.jpg" width="48" height="48" alt="Гоcтиница">
+                       <div class="popover-name">
+                           <span class="popover-card-link">Villas at Poco Diablo</span> 
+                           <span class="type-of-hotel">Апартаменты</span>
+                       </div>
+                      </a>
+                    </div>
+                   <button class="popover-button" type="button">
+                    <svg class="popover-img" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.3 2.3H.6c-.3 0-.6.2-.6.5s.3.6.6.6h1.7v12c0 
+                      .3.3.6.6.6h10.2c.3 0 .6-.3.6-.6v-12h1.7c.3 0 .6-.3.6-.6s-.4-.5-.7-.5Zm-2.8 12.5H3.4V3.4h9.1v11.4ZM6.2 1.2h3.4c.3 0 .6-.3.6-.6S10 0 9.7 0H6.2c-.3 
+                      0-.5.3-.5.6s.2.6.5.6Z"/><path d="M6.2 12c.3 0 .6-.3.6-.6V5.7c0-.3-.3-.6-.6-.6s-.6.3-.6.6v5.7c.1.3.3.6.6.6ZM9.7 
+                      12c.3 0 .6-.3.6-.6V5.7c0-.3-.3-.6-.6-.6s-.6.4-.6.6v5.7c0 .3.2.6.6.6Z"/></svg>
+                   </button>
+                  </li>
+            </ul>
+            <a class="all-main" href="#">все избранные</a>
+        </div>
+
          <li class="navigation-item-right">
            <a class="navigation-link header-button" href="#">хочу сюда!</a>
          </li>
@@ -69,15 +110,23 @@
            <legend class="hotels-filter-title">Инфраструктура:</legend>
            <ul class="hotels-filter-list">
              <li class="hotels-filter-item">
-                 <input class="control-input-checkbox" type="checkbox" name="pool" checked id="pool">
-                   <label for="pool" class="control">Бассейн</label>
+                <label class="control">
+                 <input class="control-input visually-hidden" type="checkbox" name="pool" checked id="pool">
+                 <span class="control-mark"></span>
+                 <label for="pool" class="control">Бассейн</label>
+                </label>
              </li>
              <li class="hotels-filter-item">
-                 <input class="control-input-checkbox" type="checkbox" name="parking" checked id="parking">
+              <label class="control">
+                 <input class="control-input visually-hidden" type="checkbox" name="parking" checked id="parking">
+                 <span class="control-mark"></span>
                  <label for="parking" class="control">Парковка</label>
+              </label>
              </li>
              <li class="hotels-filter-item">
-                 <input class="control-input-checkbox" type="checkbox" name="Wi-Fi" id="Wi-Fi">
+              <label class="control">
+                 <input class="control-input visually-hidden" type="checkbox" name="Wi-Fi" id="Wi-Fi">
+                 <span class="control-mark"></span>
                  <label for="Wi-Fi" class="control">Wi-Fi</label>
                </label>
               </li>
@@ -88,43 +137,48 @@
            <ul class="hotels-filter-list">
             <li class="hotels-filter-item">
              <label class="control">
-             <input class="control-input" type="radio" name="hotel" value="hotel" checked>
-             <span class="control-mark"></span>
-             <span class="control-label">Гостиница</span>
+               <input class="control-input visually-hidden" type="radio" name="hotel" value="hotel" checked>
+               <span class="control-mark"></span>
+               <span class="control-label">Гостиница</span>
             </label>
            </li>
            <li class="hotels-filter-item">
            <label class="control">
-               <input class="control-input" type="radio" name="hotel" value="motel">
+               <input class="control-input visually-hidden" type="radio" name="hotel" value="motel">
                <span class="control-mark"></span>
                <span class="control-label">Мотель</span>
             </label>
             </li>
             <li class="hotels-filter-item">
              <label class="control">
-                 <input class="control-input" type="radio" name="hotel" value="apartaments">
+                 <input class="control-input visually-hidden" type="radio" name="hotel" value="apartaments">
                    <span class="control-mark"></span>
                    <span class="control-label">Апартаменты</span>
                  </label>
               </li>
             </ul>
          </fieldset>
-         <fieldset class="hotels-filter-group">
-          <legend class="hotels-filter-title">Стоимость, ₽:</legend>
-          <form action="send.php" method="post">
-           <button class="range-toggle toggle-min" type="button">
-             <span class="visually-hidden">Изменить минимальную цену.</span>
-           </button>
-           <button class="range-toggle toggle-max" type="button">
-             <span class="visually-hidden">Изменить максимальную цену.</span>
-           </button>
-            <label class="hotels-filter-label">от
-             <input class="hotels-filter-input" type="number" name="min-price">
+         <div class="hotels-filter-range">
+          <legend class="hotels-filter-title">Стоимость, ₽:</legend> 
+          <div class="range-inputs">
+             <label class="hotels-filter-label line">от
+              <input class="hotels-filter-input" type="number" name="min-price" value="0">
+             </label>
+             <label class="hotels-filter-label right-label">до
+              <input class="hotels-filter-input" type="number" name="max-price" value="9000">
             </label>
-            <label class="hotels-filter-label">до
-             <input class="hotels-filter-input" type="number" name="max-price">
-           </label>
-         </fieldset>
+           </div>
+           <div class="range"> 
+             <div class="range-bar" style="right: 60px; width: 227px;">
+               <button class="range-toggle toggle-min" type="button">
+                 <span class="visually-hidden">Изменить минимальную цену.</span>
+               </button>
+               <button class="range-toggle toggle-max" type="button">
+                 <span class="visually-hidden">Изменить максимальную цену.</span>
+               </button>
+             </div>
+          </div>
+        </div>
          <div class="columns-right">
            <button class="button submit button-reset" type="submit">Применить</button>
            <button class="button reset" type="reset">Сбросить</button>
@@ -138,12 +192,14 @@
         <div class="hotels-settings">
         <span class="found-hotels">найдено гостиниц: 38</span>
         <form class="sorting-type">
-          <label class="visually-hidden" for="sorting">Сортировка</label>
-          <select class="select-control" id="sorting" name="sorting">
-            <option value="popular">Сначала популярное</option>
-            <option value="cheap">Сначала дешёвое</option>
-            <option value="expensive">Сначала дорогое</option>
-          </select>
+          <div class="select">
+            <label class="visually-hidden" for="sorting">Сортировка</label>
+              <select class="select-control" id="sorting" name="sorting">
+                <option value="popular">Сначала популярное</option>
+                <option value="cheap">Сначала дешёвое</option>
+                <option value="expensive">Сначала дорогое</option>
+            </select>
+          </div>
         </form>
         <div class="cards">
         <a href="#" class="button button-cards">
