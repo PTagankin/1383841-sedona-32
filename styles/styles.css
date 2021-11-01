@@ -2230,7 +2230,11 @@ fieldset {
     border-radius: 4px;
 }
 
-.minus:hover, .plus:hover{
+.minus:hover{
+    fill: rgba(0, 0, 0, 1);  
+}
+
+.plus:hover{
     fill: rgba(0, 0, 0, 1);  
 }
 

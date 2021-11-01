@@ -4,14 +4,11 @@ const modalClose = document.querySelector('.modal-close-button');
 const popups = document.querySelector('.popup');
 const popup = document.querySelector('.popover');
 
-
 function handler1() {
   popup.classList.toggle('popover-disable');
 }
 
-function handler2() {
-  popup.classList.add('popover-disable');
-}
+popups.addEventListener('click', handler1);
 
 modalOpen.addEventListener('click', function() {
   modal.classList.remove('modal-closed');
@@ -20,5 +17,3 @@ modalOpen.addEventListener('click', function() {
 modalClose.addEventListener('click', function(){
   modal.classList.add('modal-closed');
 })
-
-popups.addEventListener('click', handler1);
