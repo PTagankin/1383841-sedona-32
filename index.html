@@ -42,7 +42,7 @@
             </a>
          </li>    
          
-         <div class="popover popover-card">
+         <div class="popover popover-disable popover-card">
           <ul class="popover-list">
             <li class="popover-item">
               <div class="popover-line">
@@ -204,5 +204,70 @@
           </a>
         </div>
       </footer>
+
+    <div class="modal-container modal-closed">
+      <div class="modal hotel-search">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">поиск гостиницы в седоне</h2>
+          <form class="auth-form" action="send.php" method="post">
+            <div class="field-group input-invalid">
+              <label class="field-label" for="check-in">Дата заезда:</label>
+              <div class="input input-invalid">
+                <input class="reg-form-field field" type="text" id="check-in" name="ckeck-in" value="27 апреля 2020">
+                <button class="calendar"></button>
+              </div>
+                <span class="hotel-error">Мы не можем отправить вас в прошлое.</span>
+            </div>
+            <div class="field-group input-pass">
+              <label class="field-label another" for="check-out">Дата выезда:</label>
+              <div class="input input-pass">
+                <input class="reg-form-field field" type="text" id="check-out" name="check-out" value="1 сентября 2021">
+                <button class="calendar"></button>
+              </div>
+                <span class="hotel-pass">На эти даты есть свободные номера. Пока есть.</span>
+            </div>
+            <div class="people">
+               <div class="field-people">
+                 <label class="field-label adults" for="adults">Взрослые:</label>
+                 <div class="modal-buttons">
+                  <button class="modal-minus"><svg class="minus" width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0v1h13V0H0Z"/></svg>
+                  </button>
+                   <input class="people-form-field" type="text" id="adults" name="adults" value="2">
+                   <button class="modal-plus">
+                    <svg class="plus" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z"/></svg>
+                   </button>
+                 </div>
+                  <label class="field-label children" for="adults">Дети:</label>
+                    <button class="note">
+                      <svg class="info" width="1" height="9" viewBox="0 0 1 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#a)" ><path d="M0 9h1V3H0v6ZM1 0H0v1h1V0Z"/></g><defs><clipPath id="a">
+                          <path  d="M0 0h1v9H0z"/></clipPath></defs></svg>
+                      <span class="help">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                    </button>
+                    <div class="modal-buttons">
+                     <button class="modal-minus"><svg class="minus" width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                       <path d="M0 0v1h13V0H0Z"/></svg>
+                     </button>
+                      <input class="people-form-field" type="text" id="adults" name="adults" value="1">
+                      <button class="modal-plus">
+                       <svg class="plus" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                         <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z"/></svg>
+                      </button>
+               </div>
+            </div>
+            </div>
+          </form>
+          <button class="modal-search">
+            найти
+       </button>  
+        </section>
+      </div>
+    </div>
+
   </body>
 </html>
