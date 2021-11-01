@@ -6,7 +6,7 @@ const popup = document.querySelector('.popover');
 
 
 function handler1() {
-  popup.classList.remove('popover-disable');
+  popup.classList.toggle('popover-disable');
 }
 
 function handler2() {
