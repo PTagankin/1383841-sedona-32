@@ -106,6 +106,10 @@ ul {
     align-self: center;
 }
 
+.navigation-item-right:last-child {
+    margin-right: 0px;
+}
+
 .navigation-item-right:not(:last-child){
     height: 18px;
 }
