@@ -571,6 +571,7 @@ ul {
     text-align: center; 
     margin: 0 auto;
     padding: 12px;
+    border: none;
 }
 
 .search:hover {
@@ -2010,9 +2011,9 @@ fieldset {
     display: none;
 }
 
-.input-invalid + .hotel-error {
+ .input-invalid + .hotel-error {
       display: block;
-}
+ } 
 
 .input-invalid + .field-group {
       margin-top: 10px;
@@ -2035,10 +2036,6 @@ fieldset {
 
 .input-pass + .hotel-pass {
     display: block;
-}
-
-.input-pass + .field-group {
-   margin-top: 10px;
 }
 
 .people {
