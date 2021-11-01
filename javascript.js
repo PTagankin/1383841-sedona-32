@@ -1,11 +1,11 @@
 function myFunction() {
     var element = document.getElementById("myDIV");
-    element.className = element.className.replace(/\bmystyle\b/g, "");
+    element.className = element.className.replace(/\bmodal-closed\b/g, "");
   }
 
   function modalClose() {
     var element = document.getElementById("myDIV");
-    element.classList.add("mystyle");
+    element.classList.add("modal-closed");
   }
 
   function popupOpen() {
