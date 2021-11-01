@@ -2195,6 +2195,11 @@ fieldset {
     display: block;
 }
 
+.note:focus {
+    border: none;
+    outline: none;
+}
+
 .modal-search {
     text-transform: uppercase;
     font-family: PT Sans;
