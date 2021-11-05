@@ -95,6 +95,11 @@ ul {
     align-content: center;
 }
 
+.navigation-item-left {
+    height: 65px;
+    padding-top: 19px;
+}
+
 .navigation-item-left:not(:last-child) {
     margin: 0;
     margin-right: 33px;
@@ -147,16 +152,22 @@ ul {
     height: 21px;
 }
 
+.icons:focus {
+    outline: 3px solid red;
+    border-radius: 10px;
+    outline-offset: 20px;
+}
+
 .nav-decoration {
     fill: black;
-    margin-top: -1px !important;
+    margin-top: -1px;
 }
 
 .navigation-link:hover {
     color: #756257;
 }
 
-.nav-decoration:hover {
+.navigation-item-right:hover .nav-decoration{
     fill: #756257;
 } 
 
@@ -168,10 +179,9 @@ ul {
     outline-offset: 6px;
 }
 
-.nav-decoration:focus {
-    outline: 3px solid black;
-    outline-offset: 10px;
-    border-radius: 5px;
+.navigation-item-right:active .nav-decoration {
+    fill: #756257;
+    opacity: 0.3;
 }
 
 
@@ -180,11 +190,6 @@ ul {
     opacity: 0.3;
     outline: none;
     border: none;
-}
-
-.nav-decoration:active {
-    fill: #756257;
-    opacity: 0.3;
 }
 
 .unique {
@@ -759,13 +764,14 @@ ul {
 
 .footer-social-list {
     display: flex;
+    flex-wrap: wrap;
     margin-right: auto;
     align-items: center;
-    min-width: 150px;
+    width: 150px;
 }
 
 
-.footer-social-item {
+.footer-social-item:not(:nth-child(3n)) {
     margin-right: 29px;
     padding: 0;
 }      
@@ -791,9 +797,9 @@ ul {
 }
 
 .footer-phone {
-    width: 700px;
+    height: 50px;
     margin-left: -37px;
-    margin-top: 38px;
+    margin-top: 33px;
     font-family: "PT Sans", sans-serif;
     font-size: 40px;
     font-style: normal;
@@ -992,7 +998,7 @@ ul {
 }
 
 .control-label {
-    margin-top: 20px;
+    display: block;
 }
 
 .right {
@@ -1001,7 +1007,7 @@ ul {
 
 .submit {
     background-color: #83B3D3;
-    min-width: 160px;
+    width: 160px;
     min-height: 48px;
     font-family: "PT Sans", sans-serif;
     font-size: 16px;
@@ -1012,7 +1018,6 @@ ul {
     text-align: center;
     color: white;
     text-transform: uppercase;
-    margin-top: 8px;
 }
 
 .submit:hover {
@@ -1060,9 +1065,8 @@ ul {
 }
 
 .columns-right {
-    margin-top: 40px;
+    padding-top: 60px;
     margin-left: auto;
-    align-self: center;
 }
 
 .inner-hotels-container {
@@ -1137,6 +1141,7 @@ ul {
     box-sizing: border-box;
     border-radius: 4px;
     margin-bottom: 8px;
+    background-color: transparent;
 }
 
 .button-list:hover {
@@ -1163,6 +1168,7 @@ ul {
     box-sizing: border-box;
     border-radius: 4px;
     margin-bottom: 8px;
+    background-color: transparent;
 }
 
 .button-big-cards:hover {
@@ -1189,6 +1195,7 @@ ul {
     box-sizing: border-box;
     border-radius: 4px;
     margin-bottom: 8px;
+    background-color: transparent;
 }
 
 .button-cards:hover {
@@ -1235,7 +1242,7 @@ ul {
     display: flex;
     margin-top: 1px;
     width: 235px;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
 .line-columns {
@@ -1316,10 +1323,14 @@ ul {
     letter-spacing: 0em; 
     color: #333333;    
     text-align: center;
+    margin-left: auto;
+    width: 78px;
 }
 
 .more {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-transform: uppercase;
     font-family: "PT Sans", sans-serif;
     font-size: 16px;
@@ -1334,7 +1345,6 @@ ul {
     width: 151px;
     min-height: 37px;
     border-radius: 4px;
-    padding-top: 8px;
     margin-right: 8px;
 }
 
@@ -1599,6 +1609,7 @@ fieldset {
 
 .hotels-filter-range {
     margin-left: 105px;
+    margin-right: 81px;
 }
 
 .range {
@@ -1679,6 +1690,11 @@ fieldset {
     margin-top: 1px;
 }
 
+.hotels-filter-input:focus {
+    outline: none;
+    border: none;
+}
+
 .hotels-filter-input::-webkit-outer-spin-button,
 .hotels-filter-input::-webkit-inner-spin-button {
   appearance: none;
@@ -1716,19 +1732,9 @@ fieldset {
     position: relative;
 }
 
-/* .line::after {
-    position: absolute;
-    content: "";
-    top: -14px;
-    bottom: -14px;
-    color: white;
-    border-right: 2px solid white;
-} */
-
 .control {
     position: relative;
     display: block;
-    /* padding-left: 19px; */
     margin: 0;
   }
 
@@ -2413,6 +2419,42 @@ fieldset {
 }
 
 .popup {
+    position: relative;
     border: none;
     background-color: transparent;
+}
+
+.nav-ring {
+    position: absolute;
+    font-family: PT Sans;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 13px;
+    letter-spacing: -0.1em;
+    padding-top: 3px;
+    padding-right: 0.5px;
+    top: -5px;    
+    left: 12px;
+    color: rgba(255, 255, 255, 1); 
+    border-radius: 50%;
+    width: 19px;
+    height: 19px;
+    background-color: #7DB550;
+}
+
+ .navigation-item-right:active .nav-ring{
+    color: rgba(255, 255, 255, 0.3); 
+}
+
+.popup:focus {
+     outline: 3px solid #83B3D3;
+     border-radius: 10px;
+     outline-offset: 10px;
+}
+
+.icons:focus {
+    outline: 3px solid #83B3D3;
+    border-radius: 10px;
+    outline-offset: 10px;
 }
