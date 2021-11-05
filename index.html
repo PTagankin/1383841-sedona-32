@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
   </head>
   <body>
      <header class="page-header">
@@ -31,7 +32,7 @@
             </a>
           </li>
           <li class="navigation-item-right">
-           <a class="navigation-link popup" href="#">
+           <button type="button" class="navigation-link popup">
             <svg class="nav-decoration"  width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M8.9 17C8.6 17 8.3 16.9 8.1 16.6C2.7 10.5 1.4 9.1 1.1 8.7C0.4 7.8 0 6.6 
               0 5.4C0 2.4 2.4 0 5.5 0C6.8 0 8 0.5 9 1.3C10 0.5 11.3 0 12.5 0C15.5 0 18 2.4 18 5.4C18 6.7 17.5 7.9 16.7 8.8L9.7 16.7C9.5 16.9 9.3 17 8.9 17ZM2.9 7.5C3.2 7.9 
@@ -39,11 +40,11 @@
               2.6 6.5 2.1 5.5 2.1C3.7 2.1 2.2 3.6 2.2 5.4C2.1 6.3 2.5 7 2.9 7.5C2.8 7.5 2.8 7.5 2.9 7.5Z"/>
               </svg>
             <span class="visually-hidden">Понравившиеся</span>
-            </a>
+            </button>
          </li>    
          
          <div class="popover popover-disable popover-card">
-          <ul class="popover-list">
+           <ul class="popover-list">
             <li class="popover-item">
               <div class="popover-line">
                 <a class="popover-card-main" href="product.html">
@@ -78,8 +79,8 @@
                     12c.3 0 .6-.3.6-.6V5.7c0-.3-.3-.6-.6-.6s-.6.4-.6.6v5.7c0 .3.2.6.6.6Z"/></svg>
                  </button>
                 </li>
-          </ul>
-          <a class="all-main" href="#">все избранные</a>
+             </ul>
+           <a class="all-main" href="#">все избранные</a>
          </div>
 
          <li class="navigation-item-right">
@@ -94,7 +95,7 @@
           <h1 class="visually-hidden"> Седона - Городок в США </h1>
            <img class="main-logo" src="img/svgs/welcome.svg" alt="Вид Седона">
            <div class="block">
-                 <h2 class="sedona-advantages">седона - небольшой городок в аризоне, заслуживающий большего!</h2>
+                 <h2 class="sedona-advantages">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
                  <p class="advantages-description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
           </div>
             <section class="advantages">
@@ -102,30 +103,30 @@
                 <div class="columns">
                    <h3 class="true-city-title">настоящий городок</h3>
                    <span class="number-1">— №1 —</span>
-                   <p class="true-city-description">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+                   <p class="true-city-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
                 </div>
                  <img class="advantages-img" src="img/photo-1.jpg" width="800" height="384" alt="город с видом на горы">
               </div>
                 <ul class="comfort-list row">
-                       <li class="comfort-item comfort-blue">
+                       <li class="comfort-blue">
                          <h3 class="comfort-title">жильё</h3>
                          <p class="comfort-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
                        </li>
-                       <li class="comfort-item comfort-white">
+                       <li class="comfort-white">
                          <h3 class="comfort-title">еда</h3>
                          <p class="comfort-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
                        </li>
-                       <li class="comfort-item comfort-same-blue">
+                       <li class="comfort-same-blue">
                          <h3 class="comfort-title">сувениры</h3>
                          <p class="comfort-description">Не только китайского, но и настоящего местного производства!</p>
                        </li>
                 </ul>
               <div class="index-columns-reverse">
                  <img class="benefits-img" src="img/photo-2.jpg" width="800" height="384" alt="каньон">
-                 <div class="columns">
-                   <h3 class="devils-bridge-title blue">там есть мост дьявола</h3>
-                   <span class="number-2 blue">— №2 —</span>
-                   <p class="devils-bridge-description blue">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+                 <div class="columns-reverse">
+                   <h3 class="devils-bridge-title">там есть мост дьявола</h3>
+                   <span class="number-2">— №2 —</span>
+                   <p class="devils-bridge-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
                  </div>
               </div>
                  <ul class="more-advantages-list row">
@@ -135,12 +136,12 @@
                             <p class="more-advantages-description">Все достопримечательности находятся очень близко</p>
                        </li>
                          <li class="more-advantages-item advantages-dark-blue">
-                             <h3 class="more-advantages-title">красивая<br>дорога</h3>
+                             <h3 class="more-advantages-title">красивая дорога</h3>
                              <span class="number-4 numbers">— №4 —</span>
                              <p class="more-advantages-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
                          </li>
                          <li class="more-advantages-item advantages-same-blue">
-                             <h3 class="more-advantages-title">мало<br>туристов</h3>
+                             <h3 class="more-advantages-title">мало туристов</h3>
                              <span class="number-5 numbers">— №5 —</span>
                              <p class="more-advantages-description">Большинство едет в Гранд Каньон и толпится там</p>
                          </li>
@@ -148,12 +149,12 @@
             </section>
                <section class="interested">
                   <h2 class="interested-title">заинтересовались?</h2>
-                  <p class="interested-description">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-                  <button class="search" href="#">поиск гостиницы в седоне</button>
+                  <p class="interested-description">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+                  <button type="button" class="search">поиск гостиницы в седоне</button>
                </section>
             <section class="subscribe">
                    <h2 class="subscribe-title ">подпишитесь на рассылку</h2>
-                   <p class="subscribe-description ">Только полезная информация и никакого спама,честное бойскаутское!</p>
+                   <p class="subscribe-description ">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
                     <form action="send.php" method="post" class="email-form">
                       <label for="e-mail" class="visually-hidden">Ваш email</label>
                       <input type="email" id="e-mail" name="e-mail" class="subscribe-email" placeholder="Ваш e-mail" required>
@@ -190,7 +191,7 @@
            </ul>
            <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
            <a class="footer-link" href="https://htmlacademy.ru/">
-            <svg class="htma" width="115" height="33" viewBox="0 0 115 33"fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 12.9v2.6h2.5v-2.6H0ZM11.6 4.5c-1.6 0-2.8.7-3.6 
+            <svg class="htma" width="115" height="33" viewBox="0 0 115 33" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 12.9v2.6h2.5v-2.6H0ZM11.6 4.5c-1.6 0-2.8.7-3.6 
               1.7h-.1V0h-2v15.5h2v-5.3c0-2.1 1.3-3.6 3.3-3.6 1.8 0 2.9 1.4 2.9 3.2v5.7h2V9.4c.1-3-1.8-4.9-4.5-4.9ZM26.6 
               4.8h-4.8V1.1h-2v3.8h-1.9v2h1.9v6c0 1.7 1 2.7 2.7 2.7h4.1v-2h-3.7c-.7 0-1.1-.4-1.1-1.1V6.8h4.8v-2ZM41.1 4.6c-1.6 0-2.9.8-3.5 2.1h-.1c-.6-1.2-1.8-2.1-3.4-2.1-1.4 0-2.5.8-3.1 1.8h-.1V4.8H29v10.6h2V10c0-2 1-3.5 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2V9.8c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2V8.9c.1-2.5-1.4-4.3-3.9-4.3ZM47.8 
               12.7c0 1.7 1 2.7 2.8 2.7h2v-2h-1.7c-.7 0-1.1-.4-1.1-1.1V0h-2v12.7ZM28.9 19.7c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2V18.2h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.4 3.6-3.6 3.6ZM44.2 22c-.5-2.4-2.6-4.1-5.4-4.1a5.4 5.4 0 0 0-5.6 5.6c0 3.1 2.2 5.6 5.6 
@@ -242,7 +243,7 @@
                       <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z"/></svg>
                    </button>
                  </div>
-                  <label class="field-label children" for="adults">Дети:</label>
+                  <label class="field-label children" for="children">Дети:</label>
                     <button class="note">
                       <svg class="info" width="1" height="9" viewBox="0 0 1 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#a)" ><path d="M0 9h1V3H0v6ZM1 0H0v1h1V0Z"/></g><defs><clipPath id="a">
@@ -253,7 +254,7 @@
                      <button class="modal-minus"><svg class="minus" width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
                        <path d="M0 0v1h13V0H0Z"/></svg>
                      </button>
-                      <input class="people-form-field" type="text" id="adults" name="adults" value="1">
+                      <input class="people-form-field" type="text" id="children" name="adult" value="1">
                       <button class="modal-plus">
                        <svg class="plus" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                          <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z"/></svg>

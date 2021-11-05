@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
   </head>
   <body>
      <header class="page-header">
@@ -20,7 +21,7 @@
           </li>
          </ul>
          <a class="logo-link" href="index.html">
-            <img class="logo" src="img/svgs/sedona.svg" alt="логотип Седоны" width="138" height="70" alt="логотип Седоны">
+            <img class="logo" src="img/svgs/sedona.svg" alt="логотип Седоны" width="138" height="70">
          </a>
          <ul class="navigation-user">
           <li class="navigation-item-right">
@@ -31,7 +32,7 @@
             </a>
           </li>
         <li class="navigation-item-right">
-          <a class="navigation-link popup" href="#">
+          <button type="button" class="navigation-link popup">
            <svg class="nav-decoration"  width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
              <path d="M8.9 17C8.6 17 8.3 16.9 8.1 16.6C2.7 10.5 1.4 9.1 1.1 8.7C0.4 7.8 0 6.6 
              0 5.4C0 2.4 2.4 0 5.5 0C6.8 0 8 0.5 9 1.3C10 0.5 11.3 0 12.5 0C15.5 0 18 2.4 18 5.4C18 6.7 17.5 7.9 16.7 8.8L9.7 16.7C9.5 16.9 9.3 17 8.9 17ZM2.9 7.5C3.2 7.9 
@@ -39,7 +40,7 @@
              2.6 6.5 2.1 5.5 2.1C3.7 2.1 2.2 3.6 2.2 5.4C2.1 6.3 2.5 7 2.9 7.5C2.8 7.5 2.8 7.5 2.9 7.5Z"/>
              </svg>
            <span class="visually-hidden">Понравившиеся</span>
-           </a>
+           </button>
         </li>    
         
         <div class="popover popover-disable popover-card">
@@ -112,46 +113,46 @@
            <legend class="hotels-filter-title">Инфраструктура:</legend>
            <ul class="hotels-filter-list">
              <li class="hotels-filter-item">
-                <label class="control">
+                <p class="control">
                  <input class="control-input visually-hidden" type="checkbox" name="pool" checked id="pool">
                  <span class="control-mark"></span>
-                 <label for="pool" class="control">Бассейн</label>
-                </label>
+                 <label for="pool" class="control exper-lab">Бассейн</label>
+                </з>
              </li>
              <li class="hotels-filter-item">
-              <label class="control">
+              <p class="control">
                  <input class="control-input visually-hidden" type="checkbox" name="parking" checked id="parking">
                  <span class="control-mark"></span>
-                 <label for="parking" class="control">Парковка</label>
-              </label>
+                 <label for="parking" class="control exper-lab">Парковка</label>
+              </p>
              </li>
              <li class="hotels-filter-item">
-              <label class="control">
+              <p class="control">
                  <input class="control-input visually-hidden" type="checkbox" name="Wi-Fi" id="Wi-Fi">
                  <span class="control-mark"></span>
-                 <label for="Wi-Fi" class="control">Wi-Fi</label>
-               </label>
+                 <label for="Wi-Fi" class="control exper-lab">Wi-Fi</label>
+               </p>
               </li>
            </ul>
         </fieldset>
          <fieldset class="hotels-filter-group">
            <legend class="hotels-filter-title">Тип жилья:</legend>
            <ul class="hotels-filter-list">
-            <li class="hotels-filter-item">
+            <li class="hotels-filter-radio">
              <label class="control">
                <input class="control-input visually-hidden" type="radio" name="hotel" value="hotel" checked>
                <span class="control-mark"></span>
                <span class="control-label">Гостиница</span>
             </label>
            </li>
-           <li class="hotels-filter-item">
+           <li class="hotels-filter-radio">
            <label class="control">
                <input class="control-input visually-hidden" type="radio" name="hotel" value="motel">
                <span class="control-mark"></span>
                <span class="control-label">Мотель</span>
             </label>
             </li>
-            <li class="hotels-filter-item">
+            <li class="hotels-filter-radio">
              <label class="control">
                  <input class="control-input visually-hidden" type="radio" name="hotel" value="apartaments">
                    <span class="control-mark"></span>
@@ -161,9 +162,9 @@
             </ul>
          </fieldset>
          <div class="hotels-filter-range">
-          <legend class="hotels-filter-title">Стоимость, ₽:</legend> 
-          <div class="range-inputs">
-             <label class="hotels-filter-label line">от
+          <span class="hotels-filter-title">Стоимость, ₽:</span> 
+          <div class="range-inputs line">
+             <label class="hotels-filter-label">от
               <input class="hotels-filter-input" type="number" name="min-price" value="0">
              </label>
              <label class="hotels-filter-label right-label">до
@@ -197,9 +198,9 @@
           <div class="select">
             <label class="visually-hidden" for="sorting">Сортировка</label>
               <select class="select-control" id="sorting" name="sorting">
-                <option value="popular">Сначала популярное</option>
-                <option value="cheap">Сначала дешёвое</option>
-                <option value="expensive">Сначала дорогое</option>
+                <option value="popular">Сначала дешёвые</option>
+                <option value="cheap">Сначала популярные</option>
+                <option value="expensive">Сначала дорогие</option>
             </select>
           </div>
         </form>
@@ -248,7 +249,7 @@
                 </h3>
                 <div class="line-column">
                   <span class="type-of-hotel">Гостиница</span>
-                  <b class="product-card-price">От 4000₽</b>
+                  <b class="product-card-price">От 4000 ₽</b>
                 </div>
                 <div class="line-columns">
                   <a href="#" class="product-card-button more">подробнее</a>
@@ -256,7 +257,7 @@
                 </div>
           </div>
            <div class="mark">
-              <img class="star" src="img/svgs/stars-4.svg"  width="91" height="17">
+              <img class="star" src="img/svgs/stars-4.svg"  width="91" height="17" alt="оценка 4 звезды">
               <span class="rating">рейтинг: 8,5</span>
           </div>
         </li>
@@ -270,7 +271,7 @@
                  </h3>
                  <div class="line-column">
                    <span class="type-of-hotel">Мотель</span>
-                   <b class="product-card-price">От 3000₽</b>
+                   <b class="product-card-price">От 3000 ₽</b>
                  </div>
                  <div class="line-columns">
                    <a href="#" class="product-card-button more">подробнее</a>
@@ -278,7 +279,7 @@
                  </div>
            </div>
             <div class="mark">
-               <img class="star" src="img/svgs/stars-3.svg"  width="68" height="17">
+               <img class="star" src="img/svgs/stars-3.svg"  width="68" height="17" alt="оценка 3 звезды">
                <span class="rating">рейтинг: 8,9</span>
            </div>
          </li>
@@ -292,7 +293,7 @@
                  </h3>
                  <div class="line-column">
                    <span class="type-of-hotel">Апартаменты</span>
-                   <b class="product-card-price">От 2000₽</b>
+                   <b class="product-card-price">От 2000 ₽</b>
                  </div>
                  <div class="line-columns">
                    <a href="#" class="product-card-button more">подробнее</a>
@@ -300,7 +301,7 @@
                  </div>
            </div>
             <div class="mark">
-               <img class="star" src="img/svgs/stars-2.svg"  width="43" height="17">
+               <img class="star" src="img/svgs/stars-2.svg"  width="43" height="17" alt="оценка 2 звезды">
                <span class="rating">рейтинг: 9,2</span>
            </div>
          </li>
@@ -314,7 +315,7 @@
                  </h3>
                  <div class="line-column">
                    <span class="type-of-hotel">Гостиница</span>
-                   <b class="product-card-price">От 3000₽</b>
+                   <b class="product-card-price">От 3000 ₽</b>
                  </div>
                  <div class="line-columns">
                    <a href="#" class="product-card-button more">подробнее</a>
@@ -322,7 +323,7 @@
                  </div>
            </div>
             <div class="mark">
-               <img class="star" src="img/svgs/stars-2.svg"  width="43" height="17">
+               <img class="star" src="img/svgs/stars-2.svg"  width="43" height="17" alt="оценка 2 звезды">
                <span class="rating">рейтинг: 9,2</span>
            </div>
          </li> 
@@ -353,7 +354,7 @@
             <span class="hotels-on-page">Гостиниц на странице:</span>
             <form class="sorting-type-1">
               <label class="visually-hidden" for="sorting-hotels">Сортировка</label>
-              <select class="select-control" id="sorting-hotels" name="sorting-hotels"> 
+              <select class="select-control-hotels" id="sorting-hotels" name="sorting-hotels"> 
                 <option value="one-hotel">1</option>
                 <option value="two-hotels">2</option>
                 <option value="three-hotels">3</option>
@@ -367,7 +368,7 @@
       </div>
       <section class="subscribe-more">
         <h2 class="subscribe-title subunique">подпишитесь на рассылку</h2>
-        <p class="subscribe-description subunique">Только полезная информация и никакого спама,честное бойскаутское!</p>
+        <p class="subscribe-description-hotels subunique">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
         <form action="send.php" method="post" class="email-form">
           <label for="e-mail" class="visually-hidden">Ваш e-mail</label>
           <input type="email" id="e-mail" name="e-mail" class="subscribe-email" placeholder="Ваш e-mail" required>
