@@ -1734,7 +1734,7 @@ fieldset {
 
   .exper-lab {
       padding-top: 2px;
-      margin-left: 39px;
+      padding-left: 39px;
   }
   
   /* Mark */
@@ -1745,6 +1745,7 @@ fieldset {
     height: 20px;
     background: #FFFFFF;
     border-radius: 4px;
+    margin-right: 19px;
   }
 
   .control:hover .control-mark {
