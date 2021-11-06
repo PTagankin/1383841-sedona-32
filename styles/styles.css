@@ -32,10 +32,6 @@ a {
     text-decoration: none;
 }
 
-button {
-    cursor: pointer;
-}
-
 .visually-hidden {
     position: absolute;
     overflow: hidden;
@@ -67,12 +63,6 @@ body {
     color: black;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
 .page-header {
     background: #FFFFFF;
     color: #000000;
@@ -93,6 +83,7 @@ ul {
     margin: 0;
     padding: 0;
     align-content: center;
+    list-style-type: none;
 }
 
 .navigation-item-left {
@@ -137,7 +128,7 @@ ul {
     margin: 0;
     padding: 0;
     list-style: none;
-    color: inherit;
+    color: rgba(0, 0, 0, 1);
     font-family: "PT Sans", sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -164,7 +155,7 @@ ul {
 }
 
 .navigation-link:hover {
-    color: #756257;
+    color: rgba(117, 98, 87, 1);
 }
 
 .navigation-item-right:hover .nav-decoration{
@@ -185,9 +176,8 @@ ul {
 }
 
 
-.navigation-link:active:not(:last-child) {
-    color: #756257;
-    opacity: 0.3;
+.navigation-link:active {
+    color: rgba(117, 98, 87, 0.3);
     outline: none;
     border: none;
 }
@@ -334,11 +324,13 @@ ul {
 .comfort-list {
     margin: 0;
     padding: 0;
+    list-style-type: none;
 }
 
 .more-advantages-list {
     margin: 0;
     padding: 0;
+    list-style-type: none;
 }
 
 .columns {
@@ -707,7 +699,7 @@ ul {
 
 .subbutton {
     text-transform: uppercase;
-    background: #83B3D3;
+    background-color: #83B3D3;
     border-radius: 0px 10px 10px 0px;
     width: 200px;
     min-height: 60px;
@@ -717,7 +709,7 @@ ul {
     font-weight: 700;
     line-height: 26px;
     letter-spacing: 0em;    
-    color: white;   
+    color: rgba(255, 255, 255, 1);   
 
 }
 
@@ -725,7 +717,7 @@ ul {
     background-color: #E6E6E6;
 }
 
-.subscribe-email:focus {
+.subscribe-email:focus-visible {
     border: 3px solid #83B3D3;
     outline: none;
 }
@@ -735,6 +727,12 @@ ul {
     outline: none;
     opacity: 1;
 }
+
+/* .subscribe-email:invalid {
+    border: 2px solid #FF5757;
+    outline: none;
+    opacity: 1;
+} */
 
 .subbutton:hover {
     background-color: #68A2CA;
@@ -747,8 +745,7 @@ ul {
 
 .subbutton:active {
     background-color: #68A2CA;
-    color: #FFFFFF;
-    opacity: 0,3;
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .page-footer {
@@ -768,6 +765,7 @@ ul {
     margin-right: auto;
     align-items: center;
     width: 150px;
+    list-style-type: none;
 }
 
 
@@ -777,11 +775,11 @@ ul {
 }      
 
 .social-logo {
-    fill: #83B3D3;
+    fill: rgba(131, 179, 211, 1);;
 }
 
 .social-logo:hover {
-    fill: #68A2CA;
+    fill: rgba(104, 162, 202, 1);;
 }
 
 .social-media:focus-visible { 
@@ -793,7 +791,7 @@ ul {
 }
 
 .social-logo:active {
-    fill: #68A2CA;
+    fill: rgba(104, 162, 202, 0.3);
 }
 
 .footer-phone {
@@ -833,11 +831,11 @@ ul {
 }
 
 .htma {
-    fill: black;
+    fill: rgba(0, 0, 0, 1);
 }
 
 .htma:hover {
-    fill: #756257;
+    fill: rgba(117, 98, 87, 1);;
 }
 
 .footer-link:focus {
@@ -848,7 +846,7 @@ ul {
 }
 
 .htma:active {
-    fill: #756257;
+    fill: rgba(117, 98, 87, 0.3);
 }
 
 .inner-header {
@@ -857,7 +855,7 @@ ul {
     min-height: 408px;
     margin: 0 auto;
     background-image: url(../img/catalog-background-1.jpg);
-    background-color: #F2F2F2;
+    background-color: #83B3D3;
     background-size: 100% auto;
     background-repeat: no-repeat;
 }
@@ -896,6 +894,7 @@ ul {
     background-image: url(../img/svgs/arrow.svg);
     background-repeat: no-repeat;
     background-position: 23px ;
+    list-style-type: none;
 }
 
 .breadcrumbs-home {
@@ -948,6 +947,8 @@ ul {
 
 .hotels-filter-list {
     margin-top: 28px;
+    list-style-type: none;
+    padding: 0;
 }
 
 .hotels-filter-title {
@@ -1305,10 +1306,10 @@ ul {
 
 .type-of-hotel {
     font-family: "PT Sans", sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 23px;
+    line-height: 27px;
     letter-spacing: 0em;
     text-align: left;
     color:#333333;    
@@ -1476,6 +1477,7 @@ ul {
     display: flex;
     padding: 0;
     flex-wrap: wrap;
+    list-style-type: none;
 }
 
 .pagination-item {
@@ -1670,10 +1672,6 @@ fieldset {
     margin-top: 34px;
     display: flex;
     justify-content: center;
-    border: 2px solid #FFFFFF;
-    box-sizing: border-box;
-    border-radius: 4px;
-    padding: 9px 9px;
 }
 
 .hotels-filter-input { 
@@ -1702,9 +1700,10 @@ fieldset {
 }
 
 .hotels-filter-label{
+    height: 52px;
     display: flex;
     flex-direction: row-reverse;
-    margin-right: 31px;
+    margin-right: -2px;
     font-family: "PT Sans", sans-serif;
     font-size: 18px;
     font-style: normal;
@@ -1712,25 +1711,30 @@ fieldset {
     line-height: 23px;
     letter-spacing: 0em;
     color: rgba(255, 255, 255, 0.3);
-    justify-content: baseline;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 4px 0px 0px 4px;
+    padding-top: 14px;
+    padding-right: 14px;
+    padding-bottom: 17px;
+    padding-left: 11px;
 }
+
+.hotels-filter-label:hover{
+    border: 2px solid rgba(255, 255, 255, 0.6);
+}
+
+/* с фокусовм проблемы */
+
+.hotels-filter-label:active{
+    background-color: #756257;
+}
+
+
 
 .right-label {
     margin: 0;
-}
-
-.line::after {
-    position: absolute;
-    content: "";
-    top: 0;
-    bottom: 0;
-    min-height: 46px;
-    color: white;
-    border-right: 2px solid white;
-}
-
-.line {
-    position: relative;
+    border-radius: 0px 4px 4px 0px;
 }
 
 .control {
@@ -1888,11 +1892,6 @@ fieldset {
     opacity: 0.3;
 }
 
-.popover-button {
-    background-color: transparent;
-    border: none;
-}
-
 .popover-item {
     display: flex;
     padding-top: 25px;
@@ -1901,6 +1900,8 @@ fieldset {
 }
 
 .popover-button {
+    background-color: transparent;
+    border: none;
     margin-left: auto;
 }
 
@@ -1908,7 +1909,7 @@ fieldset {
     display: grid;
     grid-template-columns: 48px auto;
     column-gap: 17px;
-    width: 330px;
+    width: 100%;
 }
 
 .popover-card-link {
@@ -1987,6 +1988,10 @@ fieldset {
     border-radius: 10px;
     border: none;
     outline-offset: 5px;
+}
+
+.popover-button:focus .popover-img{
+    opacity: 1;
 }
 
 .popover-img:active {
@@ -2072,7 +2077,7 @@ fieldset {
 .modal-title {
       margin: 0;
       margin-top: 62px;
-      margin-bottom: 32px;
+      margin-bottom: 59px;
       font-family: "PT Sans", sans-serif;
       font-size: 30px;
       font-style: normal;
@@ -2458,4 +2463,12 @@ fieldset {
     outline: 3px solid #83B3D3;
     border-radius: 10px;
     outline-offset: 10px;
+}
+
+.field::placeholder {
+    opacity: 1;
+}
+
+.field:focus::placeholder { 
+    font-size: 0 
 }
