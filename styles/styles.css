@@ -1671,7 +1671,8 @@ fieldset {
 .range-inputs {
     margin-top: 34px;
     display: flex;
-    justify-content: center;
+    height: 48px;
+    width: 287px;
 }
 
 .hotels-filter-input { 
@@ -1700,7 +1701,7 @@ fieldset {
 }
 
 .hotels-filter-label{
-    height: 52px;
+    height: 48px;
     display: flex;
     flex-direction: row-reverse;
     margin-right: -2px;
@@ -1716,8 +1717,8 @@ fieldset {
     border-radius: 4px 0px 0px 4px;
     padding-top: 14px;
     padding-right: 14px;
-    padding-bottom: 17px;
-    padding-left: 11px;
+    padding-bottom: 15px;
+    padding-left: 14px;
 }
 
 .hotels-filter-label:hover{
