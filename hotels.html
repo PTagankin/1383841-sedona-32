@@ -108,7 +108,7 @@
         </ul>
        <section class="hotels-products">
            <h2 class="visually-hidden">Список гостиниц</h2>
-        <form action="send.php" method="post" class="form">
+        <form action="https://echo.htmlacademy.ru" method="post" class="form">
          <fieldset class="hotels-filter-group">
            <legend class="hotels-filter-title">Инфраструктура:</legend>
            <ul class="hotels-filter-list">
@@ -139,23 +139,23 @@
            <legend class="hotels-filter-title">Тип жилья:</legend>
            <ul class="hotels-filter-list">
             <li class="hotels-filter-radio">
-             <label class="control">
+             <label class="control control-radio">
                <input class="control-input visually-hidden" type="radio" name="hotel" value="hotel" checked>
-               <span class="control-mark"></span>
+               <span class="control-mark radio"></span>
                <span class="control-label">Гостиница</span>
             </label>
            </li>
            <li class="hotels-filter-radio">
-           <label class="control">
+           <label class="control control-radio">
                <input class="control-input visually-hidden" type="radio" name="hotel" value="motel">
-               <span class="control-mark"></span>
+               <span class="control-mark radio"></span>
                <span class="control-label">Мотель</span>
             </label>
             </li>
             <li class="hotels-filter-radio">
-             <label class="control">
+             <label class="control control-radio">
                  <input class="control-input visually-hidden" type="radio" name="hotel" value="apartaments">
-                   <span class="control-mark"></span>
+                   <span class="control-mark radio"></span>
                    <span class="control-label">Апартаменты</span>
                  </label>
               </li>
@@ -371,7 +371,7 @@
         <p class="subscribe-description-hotels subunique">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
         <form action="send.php" method="post" class="email-form">
           <label for="e-mail" class="visually-hidden">Ваш e-mail</label>
-          <input type="email" id="e-mail" name="e-mail" class="subscribe-email" placeholder="Ваш e-mail" required>
+          <input class="subscribe-email" type="email" id="e-mail" name="e-mail" placeholder="Ваш e-mail" required>
           <button class="button subunique subbutton button-reset" type="submit">подписаться</button>
         </form>
       </section>
