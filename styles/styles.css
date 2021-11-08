@@ -302,13 +302,12 @@ body {
 
 
 .index-columns {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+    display: flex;
 }
 
-.index-columns-reverse {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
+.index-columns:nth-child(2) {
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 .row {
@@ -721,6 +720,10 @@ body {
     border: 3px solid #83B3D3;
     padding-left: 19px;
     outline: none;
+}
+
+.subscribe-email:focus::placeholder {
+    font-size: 0;
 }
 
 .subscribe-email:focus:not(:placeholder-shown) {
