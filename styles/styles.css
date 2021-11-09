@@ -22,7 +22,7 @@
     box-sizing: border-box;
 }
 
-img {
+/* img {
     display: block;
     max-width: 100%;
     height: auto;
@@ -30,7 +30,7 @@ img {
 
 a {
     text-decoration: none;
-}
+} */
 
 .visually-hidden {
     position: absolute;
@@ -947,6 +947,8 @@ body {
 
 .hotels-filter-group {
     margin-right: 67px;
+    border: 0 none;
+    padding: 0;
 }
 
 .hotels-filter-list {
@@ -1589,11 +1591,11 @@ body {
     color: white;
 }
 
-fieldset {
+/* fieldset {
     border: 0 none;
     margin: 0;
     padding: 0;
-}
+} */
 
 
 ::placeholder {
@@ -1632,6 +1634,8 @@ fieldset {
     position: absolute;
     height: 4px;
     background-color: #ffffff;
+    right: 60px; 
+    width: 227px;
 }
 
 .range-toggle {
@@ -1743,16 +1747,34 @@ fieldset {
   appearance: none;
 }
 
+.hotels-filter-label {
+   position: relative;
+}
+
 .min-price {
     position: absolute;
-    top: 9px;
+    top: 11px;
     right: 14px;
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    color: rgba(255, 255, 255, 0.3) 
 }
 
 .max-price {
     position: absolute;
-    top: 9px;
+    top: 11px;
     right: 14px;
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    color: rgba(255, 255, 255, 0.3) 
 }
 
 .control {
@@ -1935,9 +1957,8 @@ fieldset {
     font-family: "PT Sans", sans-serif;
     font-size: 18px;
     font-style: normal;
-    font-weight: 700;
-    text-decoration: none;
-    color: black;    
+    font-weight: 700;   
+    color: black;  
 } 
 
 .popover-card-title {
@@ -1984,6 +2005,7 @@ fieldset {
 .popover-card-main{
     display: flex;
     width: 310px;
+    text-decoration: none;
 }
 
 .popover-card-main:hover {
@@ -2453,7 +2475,7 @@ fieldset {
 
 .nav-ring {
     position: absolute;
-    font-family: PT Sans;
+    font-family: "PT Sans", sans-serif;
     font-size: 10px;
     font-style: normal;
     font-weight: 400;
