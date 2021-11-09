@@ -22,16 +22,6 @@
     box-sizing: border-box;
 }
 
-/* img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-
-a {
-    text-decoration: none;
-} */
-
 .visually-hidden {
     position: absolute;
     overflow: hidden;
@@ -1590,13 +1580,6 @@ body {
 .subunique:nth-child(3) {
     color: white;
 }
-
-/* fieldset {
-    border: 0 none;
-    margin: 0;
-    padding: 0;
-} */
-
 
 ::placeholder {
     font-family: "PT Sans", sans-serif;
